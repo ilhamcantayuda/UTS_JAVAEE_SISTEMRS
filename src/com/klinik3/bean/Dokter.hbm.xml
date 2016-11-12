@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 12:57:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.klinik3.bean.Dokter" table="dokter" catalog="klinik" optimistic-lock="version">
+        <id name="kdDokter" type="string">
+            <column name="kd_dokter" length="4" />
+            <generator class="assigned" />
+        </id>
+        <property name="nmDokter" type="string">
+            <column name="nm_dokter" length="40" not-null="true" />
+        </property>
+        <property name="jeniskelamin" type="string">
+            <column name="jeniskelamin" length="12" not-null="true" />
+        </property>
+        <property name="specialist" type="string">
+            <column name="specialist" length="20" not-null="true" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="30" not-null="true" />
+        </property>
+        <property name="tlp" type="string">
+            <column name="tlp" length="15" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="20" not-null="true" />
+        </property>
+     
+    </class>
+</hibernate-mapping>
