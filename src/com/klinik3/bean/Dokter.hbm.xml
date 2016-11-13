@@ -3,7 +3,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated Nov 12, 2016 12:57:38 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="com.klinik3.bean.Dokter" table="dokter" catalog="klinik" optimistic-lock="version">
+    <class name="com.klinik3.bean.Dokter" table="dokter" catalog="apotek" optimistic-lock="version">
         <id name="kdDokter" type="string">
             <column name="kd_dokter" length="4" />
             <generator class="assigned" />
